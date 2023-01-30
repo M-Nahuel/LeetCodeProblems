@@ -8,7 +8,7 @@ var tribonacci = function(n) {
         1: 1,
         2: 1
     };
-    if (trib[n] != undefined) return fib[n];
+    if (trib[n] != undefined) return trib[n];
     for (let i=3; i<=n; i++){
         trib[i]=(trib[i-1]+trib[i-2]+trib[i-3]);
     }
